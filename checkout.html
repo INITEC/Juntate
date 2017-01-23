@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/lib/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/select2/css/select2.min.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/jquery.bxslider/jquery.bxslider.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/owl.carousel/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/lib/jquery-ui/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/estilosSearch.css" />
+
+    <title>Checkout - Kute shop</title>
+</head>
+<body class="category-page">
+<!-- HEADER -->
+<div id="header" class="header">
+    <div class="top-header">
+        <div class="container">
+            <div class="nav-top-links">
+                <a class="first-item" href="#"><img alt="phone" src="assets/images/phone.png" />(+51) 999 666 333</a>
+                <a href="#"><img alt="email" src="assets/images/email.png" />Contáctanos ahora!</a>
+            </div>
+            <div class="currency ">
+                <div class="dropdown">
+                      <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">PEN</a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Soles</a></li>
+                        <li><a href="#">Dolar</a></li>
+                        <li><a href="#">Euro</a></li>
+                      </ul>
+                </div>
+            </div>
+            <div class="language ">
+                <div class="dropdown">
+                      <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#">
+                      <img alt="email" src="assets/images/Peru.png" />Perú
+                      
+                      </a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#"><img alt="email" src="assets/images/Peru.png" />Perú</a></li>
+                        <li><a href="#"><img alt="email" src="assets/images/en.jpg" />English</a></li>
+                        <li><a href="#"><img alt="email" src="assets/images/fr.jpg" />French</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="support-link">
+                <a href="#">Servicios</a>
+                <a href="#">Soporte</a>
+            </div>
+            <div id="user-info-top" class="user-info pull-right">
+                <div class="dropdown">
+                    <a class="current-open" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" href="#"><span><?php echo "Richard"?>Mi Cuenta</span></a>
+                    <ul class="dropdown-menu mega_dropdown" role="menu">
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="#">Comparar</a></li>
+                        <li><a href="#">Mi Lista</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/.top-header -->
+    <!-- MAIN HEADER -->
+    <div class="container main-header">
+        <div class="row">
+            <div class="col-xs-12 col-sm-3 logo">
+                <a href="index.html"><img alt="Kute Shop" src="assets/images/logo.png" /></a>
+            </div>
+            <div class="col-xs-7 col-sm-7 header-search-box">
+                <form class="form-inline">
+                      <div class="form-group form-category">
+                        
+                      </div>
+                      <div class="form-group input-serach">
+                        <input type="text"  placeholder="Palabra clave aquí...">
+                      </div>
+                      <button type="submit" class="pull-right btn-search"></button>
+                </form>
+            </div>
+            <div id="cart-block" class="col-xs-5 col-sm-2 shopping-cart-box">
+                <a class="cart-link" href="order.html">
+                    <span class="title">Carro de Compra</span>
+                    <span class="total">12 item - S/. 219.16</span>
+                    <span class="notify notify-left">1</span>
+                </a>
+                <div class="cart-block">
+                    <div class="cart-block-content">
+                        <h5 class="cart-title">1 item en Mi Lista</h5>
+                        <div class="cart-block-list">
+                            <ul>
+                                <li class="product-info">
+                                    <div class="p-left">
+                                        <a href="#" class="remove_link"></a>
+                                        <a href="#">
+                                        <img class="img-responsive" src="assets/images/audifono_4.jpg" alt="p10">
+                                        </a>
+                                    </div>
+                                    <div class="p-right">
+                                        <p class="p-name">Audífono</p>
+                                        <p class="p-rice">S/. 22.43</p>
+                                    </div>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        <div class="toal-cart">
+                            <span>Total</span>
+                            <span class="toal-price pull-right">S/. 219.16</span>
+                        </div>
+                        <div class="cart-buttons">
+                            <a href="order.html" class="btn-check-out">Checkout</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MANIN HEADER -->
+    <div id="nav-top-menu" class="nav-top-menu">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3" id="box-vertical-megamenus">
+                    <div class="box-vertical-megamenus">
+                    <h4 class="title">
+                        <span class="title-menu">Categoría</span>
+                        <span class="btn-open-mobile pull-right"><i class="fa fa-bars"></i></span>
+                    </h4>
+                 
+                </div>
+                </div>
+                <div id="main-menu" class="col-sm-9 main-menu">
+                    <nav class="navbar navbar-default">
+                        <div class="container-fluid">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <i class="fa fa-bars"></i>
+                                </button>
+                                <a class="navbar-brand" href="#">MENU</a>
+                            </div>
+                           <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav">
+                                     <li><a href="#">Inicio</a>                                       
+                                    </li>                                   
+                                    <li><a href="#">Deportes</a></li>
+                                    <li>
+                                        <a href="#">Comidas</a>                                    
+                                    </li>
+                                    <li><a href="#">Digital</a>                                       
+                                    </li>
+                                    <li><a href="#">Muebles</a></li>
+                                    <li><a href="#">Joyas</a></li>
+                                </ul>
+                            </div><!--/.nav-collapse -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- userinfo on top-->
+            <div id="form-search-opntop">
+            </div>
+            <!-- userinfo on top-->
+            <div id="user-info-opntop">
+            </div>
+            <!-- CART ICON ON MMENU -->
+            <div id="shopping-cart-box-ontop">
+                <i class="fa fa-shopping-cart"></i>
+                <div class="shopping-cart-box-ontop-content"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end header -->
+
+
+
+
+
+
+
+
+<!--MODAL WINDOW-->
+
+<!-- Modal -->
+<div class="modal fade" id="myModalFinishBuy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Juntémonos</h4>
+        </div>
+        <div class="modal-body">     
+            <div class="primary-box row">
+                <div class="col-sm-12">
+                    <div class="alert alert-success text-center" role="alert">
+                        <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>                    
+                        ¡La compra colectiva se realizó con <b>éxito</b>!
+                    </div>
+                    <div class="market-form text-center">
+                        <a class="btn-add-cart" href="search.html" >SEGUIR COMPRANDO</a>
+                    </div>                            
+                </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--END MODAL-->
+
+
+
+
+
+<!-- page wapper-->
+<div class="columns-container">
+    <div class="container" id="columns">
+        <!-- breadcrumb -->
+        <div class="breadcrumb clearfix">
+            <a class="home" href="#" title="Return to Home">Home</a>
+            <span class="navigation-pipe">&nbsp;</span>
+            <span class="navigation_page">Checkout</span>
+        </div>
+        <!-- ./breadcrumb -->
+        <!-- page heading-->
+        <h2 class="page-heading">
+            <span class="page-heading-title2">Checkout</span>
+        </h2>
+        <!-- ../page heading-->
+        <div class="page-content checkout-page">
+        <h3 class="checkout-sep">1. REVISIÓN DEL PEDIDO</h3>
+         <div class="box-border">
+                <table class="table table-bordered table-responsive cart_summary">
+                    <thead>
+                        <tr>
+                            <th class="cart_product">Producto</th>
+                            <th>Descripción</th>
+                            <th>Precio Unitario</th>
+                            <th>Cantidad</th>
+                            <th>Total</th>
+                            <th  class="action"><i class="fa fa-trash-o"></i></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="cart_product">
+                                <a href="#"><img class="img-responsive" src="assets/images/audifono_4.jpg" alt="Product"></a>
+                            </td>
+                            <td class="cart_description">
+                                <p class="product-name"><a href="#">Audífonos Sony</a></p>
+                                <small class="cart_ref">SKU : #123654999</small><br>
+                                <small><a href="#">Color : Azul</a></small><br>   
+                            </td>
+                            <td class="price"><span>S/. 22.43</span></td>
+                            <td class="qty">
+                                <input class="form-control input-sm" type="text" value="12">
+                                <a href="#"><i class="fa fa-caret-up"></i></a>
+                                <a href="#"><i class="fa fa-caret-down"></i></a>
+                            </td>
+                            <td class="price">
+                                <span>S/. 219.16</span>
+                            </td>
+                            <td class="action">
+                                <a href="#">Delete item</a>
+                            </td>
+                        </tr>
+                                      
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3" rowspan=""></td>
+                            <td colspan="2">Total producto (incl. IGV)</td>
+                            <td colspan="2">S/. 219.16</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3"><strong>Total</strong></td>
+                            <td colspan="3"><strong>S/. 219.16</strong></td>
+                        </tr>
+                    </tfoot>    
+                </table>
+                <button class="button pull-right"  onclick="lanzarToast()">Conforme</button>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h3 class="checkout-sep">2. Información</h3>
+                    <div class="box-border">
+                        <ul>
+                            <li class="row"> 
+                                <div class="col-xs-12">
+                                    <label for="address" class="required">Correo electrónico</label>
+                                    <input type="text" class="input form-control" name="" id="address">
+
+                                </div><!--/ [col] -->
+                            </li><!-- / .row -->
+                            <li class="row"> 
+                                <div class="col-xs-12">
+                                    <label for="address" class="required">Dirección</label>
+                                    <input type="text" class="input form-control" name="" id="address">
+
+                                </div><!--/ [col] -->
+                            </li><!-- / .row -->                        
+                            <li class="row">
+                                <div class="col-sm-6">
+                                    <label for="first_name" class="required">Nombre</label>
+                                    <input type="text" class="input form-control" name="" id="first_name">
+                                </div><!--/ [col] -->
+                                <div class="col-sm-6">
+                                    <label for="last_name" class="required">Apeliido</label>
+                                    <input type="text" name="" class="input form-control" id="last_name">
+                                </div><!--/ [col] -->
+                            </li><!--/ .row -->
+                            <li class="row">
+                                <div class="col-sm-6">
+                                    <label for="dni_name">DNI</label>
+                                    <input type="number" name="" class="input form-control" id="company_name">
+                                </div><!--/ [col] -->
+                                <div class="col-sm-6">
+                                    <label for="email_address" class="required">Teléfono</label>
+                                    <input type="number" class="input form-control" name="" id="email_address">
+                                </div><!--/ [col] -->
+                            </li><!--/ .row -->
+                            <li class="row"> 
+                                <div class="col-xs-12">
+                                    <p>*Los datos del comprador deben coincidir con los datos del titular de la tarjeta con la que se va a realizar la transacción.</p>
+                                </div><!--/ [col] -->
+                            </li><!-- / .row -->
+                            <li class="row"> 
+                                <div class="col-xs-12">
+                                    <input type="checkbox" name="send_email" value="check_send" checked>Quiero recibir promociones por email
+                                </div><!--/ [col] -->
+                            </li><!-- / .row -->
+                            <li>
+                                <button class="button">Ir para el recojo</button>
+                            </li>
+                        </ul>
+                    </div>                    
+                </div>
+                <div class="col-sm-6">                    
+                    <h3 class="checkout-sep">3. Dirección de recojo</h3>
+                    <div class="box-border">
+                        <ul class="shipping_method">
+                            <li class="row">
+                                <div class="col-xs-12">
+                                    <label class="required">Seleccionar punto de recojo</label>
+                                    <div class="custom_select">
+                                        <select class="input form-control" name="">
+                                            <option value="Dirección 1">Plaza Norte</option>
+                                            <option value="Dirección 2">Centro Mall Sur</option>
+                                            <option value="Dirección 3">Los Álamos</option>
+                                        </select>
+                                        <img src="assets/images/map2.png" width>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <br>                      
+
+                            </li>
+                        </ul>
+                        <button class="button" href="#" data-toggle="modal" data-target="#myModalFinishBuy">Comprar</button>
+                    </div>                                        
+                </div>
+
+            </div>
+                       
+        </div>
+    </div>
+</div>
+<!-- ./page wapper-->
+<!-- Footer -->
+<footer id="footer">
+     <div class="container">
+            <!-- introduce-box -->
+            <div id="introduce-box" class="row">
+                <div class="col-md-3">
+                    <div id="address-box">
+                        <a href="#"><img src="assets/images/logo.png" alt="" /></a>
+                        <div id="address-list">
+                            <div class="tit-name">Dirección:</div>
+                            <div class="tit-contain">Calle 68, Mahattan, Lima, Perú.</div>
+                            <div class="tit-name">Teléfono:</div>
+                            <div class="tit-contain">+00 123 456 789</div>
+                            <div class="tit-name">Correo:</div>
+                            <div class="tit-contain">support@business.com</div>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="introduce-title">Compañia</div>
+                            <ul id="introduce-company"  class="introduce-list">
+                               <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Suscríbete</a></li>
+                                <li><a href="#">Términos y condiciones</a></li>
+                                <li><a href="#">Contáctanos</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="introduce-title">Mi cuenta</div>
+                            <ul id = "introduce-Account" class="introduce-list">
+                                <li><a href="#">Mi Orden</a></li>                               
+                                <li><a href="#">Mi crédito</a></li>
+                                <li><a href="#">Mi direccion</a></li>                              
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div id="contact-box">
+                       
+                        <div class="introduce-title">Redes Sociales</div>
+                        <div class="social-link">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-pinterest-p"></i></a>
+                            <a href="#"><i class="fa fa-vk"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- /#introduce-box -->
+            <!-- #trademark-box -->
+            <div id="trademark-box" class="row">
+                <div class="col-sm-12">
+                    <ul id="trademark-list">
+                        <li id="payment-methods">Métodos de pago aceptados</li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-ups.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-qiwi.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-wu.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-cn.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-visa.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-mc.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-ems.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-dhl.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-fe.jpg"  alt="ups"/></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src="assets/data/trademark-wm.jpg"  alt="ups"/></a>
+                        </li>
+                    </ul> 
+                </div>
+            </div> <!-- /#trademark-box -->
+            <!-- #trademark-text-box -->
+            <div id="trademark-text-box" class="row">
+                <div class="col-sm-12">
+                    
+                </div>
+                <div class="col-sm-12">
+                    
+                </div>
+                <div class="col-sm-12">
+                   
+                </div>
+                <div class="col-sm-12">
+                   
+                </div>
+                <div class="col-sm-12">
+                   
+                </div>
+                <div class="col-sm-12">
+                    
+                </div>
+            </div><!-- /#trademark-text-box -->
+            <div id="footer-menu-box">
+                <div class="col-sm-12">
+                   
+                </div>
+                <div class="col-sm-12">
+                    
+                </div>
+                <div class="col-sm-12">
+                    
+                </div>
+                <div class="col-sm-12">
+                   
+                </div>
+                <p class="text-center">Copyrights &#169; 2017 Juntate!. Todos los derechos reservados. Designed by KuteThemes.com</p>
+            </div><!-- /#footer-menu-box -->
+        </div> 
+</footer>
+
+<div id="snackbar">Juanka se sumó a la compra colectiva..</div>
+
+
+<a href="#" class="scroll_top" title="Scroll to Top" style="display: inline;">Scroll</a>
+<!-- Script-->
+<script type="text/javascript" src="assets/lib/jquery/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="assets/lib/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/lib/select2/js/select2.min.js"></script>
+<script type="text/javascript" src="assets/lib/jquery.bxslider/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="assets/lib/owl.carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="assets/lib/jquery.countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript" src="assets/lib/jquery-ui/jquery-ui.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.actual.min.js"></script>
+<script type="text/javascript" src="assets/js/theme-script.js"></script>
+
+<script type="text/javascript">
+    
+function lanzarToast() {
+    var x = document.getElementById("snackbar")
+    x.className = "show";
+    setTimeout(function(){ x.className = x.className.replace("show", ""); }, 4000);
+}
+</script>
+</body>
+</html>
